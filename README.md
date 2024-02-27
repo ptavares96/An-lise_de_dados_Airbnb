@@ -189,7 +189,7 @@ Perguntas possíveis a serem realizadas:
 Em primeiro lugar dos tipos de imóveis mais caros está casas/apartamentos com valor médio de aluguel de \$193.3. Quartos privativos custam em média \$175.4, sendo o segundo imóvel mais caro. O mais barato dos imóveis são quartos de hotéis com valor médio de alguel de \$75.02.
 
 <p align="center">
-  <img alt="Analisando Airbnb" width="80%" src="pice_neighb.png">
+  <img alt="preços por bairros width="80%" src="price_neighb.png">
 </p>
 
 <p align="center">
@@ -236,30 +236,6 @@ Ao analisar os gráficos, observamos que a maioria dos aluguéis concentra-se em
 Na categorização dos imóveis por preço médio de aluguel, casas/apartamentos lideram com \$193.3, seguidos por quartos privativos (\$175.4) e quartos de hotéis (\$75.02). Os bairros mais caros incluem Financial District, North Beach, Castro/Upper Market, Presidio e Chinatown, enquanto Outer Mission, Crocker Amazon, Excelsior e Parkside são os mais bem avaliados.
 
 As análises de correlação revelam que a relação entre preço e outras variáveis é geralmente fraca. O número mínimo de noites mostra uma relação negativa com disponibilidade e uma moderada relação negativa com o número de reviews a longo prazo. O número de reviews está fortemente relacionado tanto com os reviews a longo prazo quanto com a quantidade de reviews por mês. A disponibilidade ao longo do ano apresenta relações fracas com várias variáveis, incluindo preço e número de reviews a longo prazo.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Referências inspiradas 
