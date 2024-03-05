@@ -1,40 +1,36 @@
-# Análise dos dados do Airbnb
+# Airbnb Data Analysis
 
-Com o objetivo de estudar a extração de informação a partir de dados de empresas, este projeto mostra uma análise dos dados do Aribnb para a região São Francisco, California.
+With the goal of studying information extraction from company data, this project presents an analysis of Airbnb data for the San Francisco, California region
+
+
+## San Francisco
 
 <p align="center">
-  <img alt="Analisando Airbnb" width="30%" src="https://vidacigana.com/wp-content/uploads/2018/06/como-funciona-airbnb-1-990x518.jpg">
+  <img width="60%" src="https://blog.123milhas.com/wp-content/uploads/2022/09/o-que-fazer-em-san-francisco-bondinhos-conexao123.jpg" >
 </p>
 
 <p align="center">
-  Fonte: (https://vidacigana.com/como-funciona-o-airbnb/)
+  Font: (https://blog.123milhas.com/o-que-fazer-em-san-francisco-pontos-turisticos-e-passeios/)
 </p>
 
-## São Francisco
+Before conducting a specific exploratory data analysis, it's important to conduct a comprehensive research on topics related to the data at hand. This search for information can not only provide valuable insights but also assist in identifying patterns and underlying meanings behind the analysis results.
 
-<p align="center">
-  <img width="60%" src="san_francisco.jpg" >
-</p>
+In the present case, I focused on analyzing Airbnb data for the city of San Francisco. Initially, it's evident that the focus will be on the location and values of residential properties available for rent, as well as relevant information to the proposed analysis.
 
-Prefiro que antes de realizar uma análise exploratória de dados específicos, considero realizar uma pesquisa abrangente sobre os tópicos relacionados aos dados em questão. Essa busca por informações não apenas pode proporcionar insights valiosos, mas também auxiliar na identificação de padrões e significados subjacentes aos resultados obtidos durante a análise.
+San Francisco, located in northern California on the west coast of the United States, has a population of approximately 900,000 inhabitants. Founded in 1776 by Franciscan friars, hence the city's name, San Francisco became widely recognized starting from 1848, the year of an important discovery in the region.
 
-No caso presente, me concentrei na análise nos dados do Airbnb referentes à cidade de São Francisco. Inicialmente, é evidente que o foco será a localização e valores das residências disponíveis para aluguel, assim como informações pertinentes à proposta em questão.
+Considered a popular destination for international travelers, the city attracted around 10.2 million tourists in 2022, marking a significant reduction compared to previous years. In 2019, for example, San Francisco recorded an impressive number of approximately 26 million visitors. This decrease in the number of tourists can be attributed to travel restrictions implemented due to the Coronavirus pandemic, highlighting the significant impact of the global crisis on the tourism industry.
 
-São Francisco, localizada no norte da Califórnia, na região do litoral oeste dos Estados Unidos, possui uma população de aproximadamente 900 mil habitantes. Fundada em 1776 pelos padres franciscanos, daí originando-se o nome da cidade, São Francisco tornou-se amplamente reconhecida a partir de 1848, ano em que ocorreu uma importante descoberta na região.
-
-Considerada um destino popular para viajantes internacionais, a cidade atraiu cerca de 10,2 milhões de turistas em 2022, marcando uma significativa redução em comparação aos anos anteriores. Em 2019, por exemplo, São Francisco registrou a impressionante marca de aproximadamente 26 milhões de visitantes. Essa diminuição no número de turistas pode ser atribuída às restrições de viagens implementadas devido à pandemia do Coronavírus, destacando o impacto significativo da crise global na indústria do turismo.
-
-Passear por São Francisco é entrar em uma jornada pela diversidade, refletida em seus icônicos bairros, cada um contando uma história Em Castro, conhecida como a capital mundial LGBTQIA+, cafés ao ar livre e bares históricos entrelaçam-se com a vibrante narrativa do movimento de direitos. À medida que se percorre a Castro St., a história ganha vida, desde o emblemático Castro Theatre até o Twin Peaks Tavern, o primeiro bar do bairro, aberto em 1972.
+Exploring San Francisco is embarking on a journey through diversity, reflected in its iconic neighborhoods, each telling a story. In Castro, known as the LGBTQIA+ world capital, outdoor cafes and historic bars intertwine with the vibrant narrative of the rights movement. As one walks down Castro St., history comes to life, from the iconic Castro Theatre to the Twin Peaks Tavern, the neighborhood's first bar, opened in 1972.
 
 <p align="center">
   <img alt="Castro" width="60%" src="https://imgmd.net/images/v1/guia/1566296/the-castro.jpg">
 </p>
 
 <p align="center">
-  Fonte: (https://guia.melhoresdestinos.com.br/the-castro-92-1528-l.html)
+  Font: (https://guia.melhoresdestinos.com.br/the-castro-92-1528-l.html)
 </p>
-
-No Presidio, antiga base militar transformada em parque, a arte de Andy Goldsworthy se mescla à majestosa vista da Golden Gate Bridge. Enquanto isso, o Walt Disney Family Museum oferece uma imersão emocionante na história da Disney. Em Chinatown, a primeira e maior da América do Norte, telhados coloridos, postes de luz de dragão e o nascimento do famoso biscoito da sorte criam uma experiência única a poucas quadras da Union Square.
+In Presidio, a former military base transformed into a park, Andy Goldsworthy's art blends with the majestic view of the Golden Gate Bridge. Meanwhile, the Walt Disney Family Museum offers an exciting immersion into the history of Disney. In Chinatown, the first and largest in North America, colorful rooftops, dragon light poles, and the birth of the famous fortune cookie create a unique experience just a few blocks from Union Square.
 
 <p align="center">
   <img alt="Presidio" width="60%" src="https://a.travel-assets.com/findyours-php/viewfinder/images/res40/22000/22448-Presidio-Military-Reservation.jpg">
@@ -44,11 +40,11 @@ No Presidio, antiga base militar transformada em parque, a arte de Andy Goldswor
   Fonte: (https://www.expedia.com.br/fotos/san-mateo-county/san-francisco/presidio-of-san-francisco.d502558)
 </p>
 
-O Civic Center, entre a Avenida Van Ness e a Market St., revela-se como um polo cultural, abrigando a imponente Prefeitura, o War Memorial Opera House e o renomado Asian Art Museum. Enquanto isso, Fisherman's Wharf, destino turístico por excelência, convida os visitantes a degustar deliciosos frutos do mar e explorar a histórica Alcatraz.
+The Civic Center, between Van Ness Avenue and Market St., reveals itself as a cultural hub, housing the imposing City Hall, the War Memorial Opera House, and the renowned Asian Art Museum. Meanwhile, Fisherman's Wharf, a quintessential tourist destination, invites visitors to taste delicious seafood and explore the historic Alcatraz.
 
-Haight-Ashbury, imortalizando o espírito do movimento hippie, é um marco histórico com suas lojas vintage na Upper Haight Street e as famosas Painted Ladies próximas à Alamo Square. Na Marina, vistas de tirar o fôlego, bares em ascensão e o imponente Palace of Fine Arts deslumbram os visitantes.
+Haight-Ashbury, immortalizing the spirit of the hippie movement, is a historical landmark with its vintage shops on Upper Haight Street and the famous Painted Ladies near Alamo Square. In the Marina, breathtaking views, rising bars, and the imposing Palace of Fine Arts dazzle visitors.
 
-O Mission District, mais antigo da cidade, cativa com sua rica herança latina, murais envolventes e o histórico Dolores Park. Em Embarcadero, o movimentado bairro ao final da Market St., oferece vistas panorâmicas dos arranha-céus e da Bay Bridge, além de ser lar do Ferry Building e do interativo Exploratorium.
+The Mission District, the city's oldest, captivates with its rich Latino heritage, engaging murals, and the historic Dolores Park. In Embarcadero, the bustling neighborhood at the end of Market St., offers panoramic views of skyscrapers and the Bay Bridge, as well as being home to the Ferry Building and the interactive Exploratorium.
 
 <p align="center">
   <img alt="Mission District" width="60%" src="https://americafromtheroad.com/wp-content/uploads/2021/06/Balmy-Alley-in-the-Mission-District-San-Francisco.jpg">
@@ -58,187 +54,178 @@ O Mission District, mais antigo da cidade, cativa com sua rica herança latina, 
   Fonte: (https://americafromtheroad.com/mission-district-things-to-do-and-must-eats/)
 </p>
 
-## Análise
-### 1. Informação dos dados e limpeza dos dados
+## Analyse
+### 1. Informations about the data and data cleaning
 
-Os dados foram adquiridos através do portal [Inside Airbnb](http://insideairbnb.com/get-the-data/), que disponibiliza diversos conjuntos de dados provenientes de várias cidades, diretamente fornecidos pela empresa Airbnb.
+[Inside Airbnb](http://insideairbnb.com/get-the-data/) is a platform dedicated to providing detailed information about lodging listings, allowing for in-depth analysis of rental market patterns and trends. The datasets available cover a variety of relevant information, including residence locations, property features, prices, availability, among others.
 
-O Inside Airbnb é uma plataforma dedicada a fornecer informações detalhadas sobre as listagens de hospedagem, permitindo uma análise aprofundada dos padrões e tendências do mercado de aluguel. Os datasets disponibilizados abrangem uma variedade de informações relevantes, incluindo a localização das residências, características das propriedades, preços, disponibilidade, entre outros.
+The Airbnb dataset for the city of San Francisco consists of **8056 entries** (rows) and **18 variables** (columns).
 
-O conjunto de dados do Airbnb para a cidade de São Francisco consiste em **8056 entradas** (linhas) e **18 variáveis** (colunas).
+Predominantly, the dataset is composed of integer (int64) and object (object) data types. Some columns, such as `neighbourhood_group`, `reviews_per_month`, `last_review`, and `license`, contain float64 data types.
 
-Predominantemente, o conjunto de dados é composto por variáveis do tipo inteiro (int64) e objetos (object). Algumas colunas, como `neighbourhood_group`, `reviews_per_month`, `last_review`, e `license`, contêm tipos de dados float64.
+Some columns have a considerable number of unique values, such as `id` (8056), `longitude` (5898), `latitude` (5820). Regarding the `id` variable, it indicates that each data point is unique, while the high number of unique values in longitude and latitude is due to them being location variables. The dataset contains missing data in several columns.
 
-Algumas colunas possuem um número considerável de valores únicos, como `id` (8056), `longitude` (5898), `latitude` (5820). No caso da variável `ìd` indica que cada dado é único, sobre a alta de valroes únicos em longitude e latitude é por elas serem váraives da localização. O dataset apresenta dados ausentes em várias colunas.
+The `neighbourhood_group` column is completely absent, and the `license` column has a missing rate of 36.80%. Other columns, such as `reviews_per_month` and `last_review`, also have a considerable proportion of missing values, reaching 23.39%.
 
-A coluna `neighbourhood_group` está completamente ausente, e a `license` possui uma taxa de ausência de 36.80%. Outras colunas, como `reviews_per_month` e `last_review`, também têm uma proporção considerável de valores ausentes, atingindo 23.39%.
+**Dictionary of variables**
 
-**Dicionário das variáveis**
 
-* id: identificação única para o anúncio
-* name: nome do anúncio
-* host_id: identificador único para o proprietário do imóvel
-* host_name: nome do proprietário
-* neighbourhood_group: município ao qual o imóvel pertence, geolocalizado pelas coordenadas de latitude e longitude
-* neighbourhood: bairro da propriedade
-* latitude: coordenada geográfica de latitude da propriedade
-* longitude: coordenada geográfica de longitude da propriedade
-* room_type: tipo de quarto oferecido para locação
-* price: preço da diária do aluguel
-* minimum_nights: quantidade mínima de noites para alugar o imóvel
-* number_of_reviews: quantidade de avaliações que o imóvel tem
-* last_review: data da última avaliação
-* reviews_per_month: quantidade de avaliações por mês
-* calculated_host_listings_count : quantidade de imóveis do mesmo proprietário na mesma cidade/região
-* availability_365: número de dias disponíveis para locação nos próximos 365 dias
-* number_of_reviews_ltm: quantidade de avaliações nos últimos 12 meses
-* license: número de registro do imóvel
+| Variable                      | Description                                                                                 |
+|-------------------------------|---------------------------------------------------------------------------------------------|
+| id                            | Unique identifier for the listing                                                           |
+| name                          | Listing name                                                                                |
+| host_id                       | Unique identifier for the property owner                                                     |
+| host_name                     | Property owner's name                                                                       |
+| neighbourhood_group           | Municipality to which the property belongs, geolocated by latitude and longitude coordinates |
+| neighbourhood                 | Property's neighborhood                                                                     |
+| latitude                      | Geographic latitude coordinate of the property                                                |
+| longitude                     | Geographic longitude coordinate of the property                                               |
+| room_type                     | Type of room offered for rental                                                             |
+| price                         | Rental price per night                                                                      |
+| minimum_nights                | Minimum number of nights to rent the property                                                 |
+| number_of_reviews             | Number of reviews the property has                                                            |
+| last_review                   | Date of the last review                                                                      |
+| reviews_per_month             | Number of reviews per month                                                                  |
+| calculated_host_listings_count| Number of properties by the same owner in the same city/region                                |
+| availability_365              | Number of days available for rent in the next 365 days                                        |
+| number_of_reviews_ltm         | Number of reviews in the last 12 months                                                       |
+| license                       | Property registration number                                                                 |
 
-### 1.1 Descrição estatística das variáveis 
-A variável `price`, que representa o valor em dólares por noite do aluguel, exibe uma média de cerca de \$228,00, com 75% dos valores abaixo de \$232,00. No entanto, chama atenção o preço máximo de \$25.000,00 e o considerável desvio padrão de \$671,91. Essa distribuição sugere a presença de valores atípicos (outliers) que podem impactar a interpretação dos resultados.
+### 1.1 Statistical description of variables
+The variable `price`, which represents the price in dollars per night of the rental, shows an average of about \$228.00, with 75% of the values below \$232.00. However, the maximum price of \$25,000.00 and the considerable standard deviation of \$671.91 draw attention. This distribution suggests the presence of outliers that can impact the interpretation of the results.
 
-Além disso, a variável `minimum_nights` revela que a média de noites mínimas para aluguel é de aproximadamente 24 noites, com 75% dos valores abaixo de 30 noites. Entretanto, o valor máximo registrado é de 1.125 noites, um patamar fora do comum para o padrão de aluguel típico do Airbnb. Este valor elevado é notável e pode ser considerado um possível outlier, demandando uma análise mais aprofundada para compreender sua origem e impacto nas conclusões do estudo.
+Furthermore, the variable `minimum_nights` reveals that the average minimum nights for rental is approximately 24 nights, with 75% of the values below 30 nights. However, the maximum value recorded is 1,125 nights, a level outside the typical Airbnb rental pattern. This high value is notable and may be considered a possible outlier, requiring further analysis to understand its origin and impact on the study's conclusions.
 
-No que diz respeito às avaliações, a quantidade média de avaliações por mês (`reviews_per_month`) é de aproximadamente 2,06, com o valor máximo de 162, considerado alto em relação à média, e o valor de 75% de 2,13, sugerindo a presença de outliers. O mesmo se aplica à variável `number_of_reviews`, com média de 44 e 75% dos dados abaixo de 45. No entanto, ela apresenta um valor máximo de 877 e desvio padrão de 85,49, indicando a possível existência de outliers que merecem investigação mais detalhada.
+Regarding the reviews, the average number of reviews per month (`reviews_per_month`) is approximately 2.06, with the maximum value of 162, considered high compared to the average, and the 75th percentile of 2.13, suggesting the presence of outliers. The same applies to the variable `number_of_reviews`, with an average of 44 and 75% of the data below 45. However, it has a maximum value of 877 and a standard deviation of 85.49, indicating the possible existence of outliers that deserve further investigation.
 
-A variável `calculated_host_listings_count` revela uma média de 14 propriedades por usuário, mas com um desvio de aproximadamente 32 e um valor máximo de 154. Quanto à `number_of_reviews_ltm`, há um máximo de 435, com média de 6,89 e desvio padrão de 16,51. Esses dados também apontam para a presença de valores discrepantes que podem influenciar as análises, destacando a importância de considerar esses casos ao interpretar os resultados do estudo.
+The variable `calculated_host_listings_count` reveals an average of 14 properties per user, but with a deviation of approximately 32 and a maximum value of 154. As for `number_of_reviews_ltm`, there is a maximum of 435, with an average of 6.89 and a standard deviation of 16.51. These data also point to the presence of discrepant values that can influence the analyses, highlighting the importance of considering these cases when interpreting the study's results.
 
-### 1.2 Limpeza das variáveis
+### 1.2 Variable Cleaning
 
-Após a limpeza dos outliers, é visto que as características das variáveis foram significativamente ajustadas. A média do preço (`price`) reduziu para \$161.22, com um desvio padrão de \$94.97.
+After cleaning the outliers, it is observed that the characteristics of the variables have been significantly adjusted. The mean price (`price`) reduced to \$161.22, with a standard deviation of \$94.97.
 
-A quantidade mínima de noites (`minimum_nights`) apresentou uma média de 14.25, com um desvio padrão de 14.40. A redução na dispersão dos dados sugere que a maioria das propriedades requer um número mais razoável de noites mínimas para locação, eliminando valores extremos que distorciam a média anteriormente.
+The minimum number of nights (`minimum_nights`) showed an average of 14.25, with a standard deviation of 14.40. The reduction in data dispersion suggests that most properties require a more reasonable number of minimum nights for rental, eliminating extreme values that previously distorted the mean.
 
-A variável `number_of_reviews` agora possui uma média de 16.35, com um desvio padrão de 25.01.
+The variable `number_of_reviews` now has a mean of 16.35, with a standard deviation of 25.01.
 
-A média de avaliações por mês (`reviews_per_month`) foi ajustada para 0.95, com um desvio padrão de 1.07. Esse resultado mais homogêneo sugere uma distribuição mais estável da frequência de avaliações mensais.
+The mean reviews per month (`reviews_per_month`) was adjusted to 0.95, with a standard deviation of 1.07. This more homogeneous result suggests a more stable distribution of monthly review frequency.
 
-A média de propriedades listadas por usuário (`calculated_host_listings_count`) foi ajustada para 4.29, com um desvio padrão de 5.72. Esse ajuste indica uma distribuição mais concentrada em comparação com os dados anteriores.
+The mean of properties listed per user (`calculated_host_listings_count`) was adjusted to 4.29, with a standard deviation of 5.72. This adjustment indicates a more concentrated distribution compared to the previous data.
 
-Por fim, a quantidade média de avaliações nos últimos 12 meses (`number_of_reviews_ltm`) foi ajustada para 2.74, com um desvio padrão de 4.50.
+Finally, the average number of reviews in the last 12 months (`number_of_reviews_ltm`) was adjusted to 2.74, with a standard deviation of 4.50.
 
-A limpeza então permitiu uma distribuição mais centrada e menos influenciada por valores extremos.
+The cleaning process thus allowed for a more centered distribution and less influenced by extreme values.
 
-### 2. Análise univariada
+### 2. Univariate Analysis
 
-Numa abordagem inicial de análise de dados, acho interessante formular  algumas perguntas específicas para orientar a investigação e direcionar a visualização das informações por meio de gráficos relevantes.
+In an initial approach to data analysis, it is interesting to formulate some specific questions to guide the investigation and direct the visualization of information through relevant graphs.
 
-A fase de análise univariada concentra-se na avaliação de uma única variável, considerando sua distribuição e proporção nos dados. Ao compreender como uma variável se distribui, pode ser visto tendências, anomalias e características distintivas. Essa abordagem proporciona uma visão detalhada dos dados, possibilitando a escolha adequada de gráficos que melhor representem as características da variável em questão.
+The univariate analysis phase focuses on evaluating a single variable, considering its distribution and proportion in the data. By understanding how a variable is distributed, trends, anomalies, and distinctive characteristics can be observed. This approach provides a detailed view of the data, enabling the appropriate selection of graphs that best represent the characteristics of the variable in question.
 
-Algumas perguntas sugeridas:
+Some suggested questions include:
 
-* Qual é a distribuição dos preços das diárias de aluguel?
-
-* Quais são os tipos mais comuns de quartos oferecidos para locação? Existe uma predominância em algum tipo?
-
-* Como a quantidade mínima de noites para alugar varia entre as propriedades?
-
-* Como as avaliações estão distribuídas?
-
-* Como está distribuída a quantidade de avaliações por mês?
-
-* Como a disponibilidade ao longo do ano se distribui?
-
-* Qual é a distribuição da quantidade de imóveis que um mesmo proprietário possui na cidade?
-
-* Como as propriedades estão distribuídas geograficamente na cidade? Existe alguma concentração em bairros específicos?
+- What is the distribution of rental prices per night?
+- What are the most common types of rooms offered for rent? Is there a predominance of any type?
+- How does the minimum number of nights for rent vary among properties?
+- How are reviews distributed?
+- How is the distribution of reviews per month?
+- How is availability throughout the year distributed?
+- What is the distribution of the number of properties owned by the same owner in the city?
+- How are properties geographically distributed in the city? Is there any concentration in specific neighborhoods?
 
 <p align="center">
-  <img alt="Analisando Airbnb" width="100%" src="univariada_airbnb.png">
+  <img alt="Analisando Airbnb" width="100%" src="univariate.png">
 </p>
 
 <p align="center">
-  Fonte: Autor
+  Font: Author
 </p>
 
-Análise dos gráficos revela as seguintes conclusões:
+The analysis of the graphs reveals the following conclusions:
 
-Os valores de aluguel concentram-se predominantemente entre $10,00 e $200,00, com uma expressiva quantidade de imóveis alugados em torno de $100,00.
+- Rental prices are predominantly concentrated between $10.00 and $200.00, with a significant number of properties rented around $100.00.
+  
+- Houses/Apartments are the most rented property types, accounting for 61.8% of the rentals, while hotel rooms are less sought after, with only 0.7%.
 
-Casas/Apartamentos são os tipos de propriedades mais alugados, representando 61,8% das locações, enquanto quartos de hotéis são menos procurados, com apenas 0,7%.
+- The most popular rental periods range from 0 to 5 nights, as well as 30-night stays. This reflects a diversity in renters' needs, covering both temporary and extended stays.
 
-Os períodos de aluguel mais populares abrangem estadias de 0 a 5 noites, assim como estadias de 30 noites. Isso reflete uma diversidade nas necessidades dos locatários, abrangendo tanto estadias temporárias quanto prolongadas.
+- The majority of reviews fall within the range of 0 to 5, indicating a concentration of positive feedback.
 
-A maioria das avaliações situa-se na faixa de 0 a 5, indicando uma concentração de feedbacks positivos.
+- Property availability is significant, ranging from 0 to 25 days and peaking around 350 days.
 
-A disponibilidade de imóveis é significativa, variando de 0 a 25 dias e atingindo um pico em torno de 350 dias.
+- Most property owners own only one property, suggesting a significant participation of individual owners in Airbnb.
 
-A maioria dos proprietários de imóveis possui apenas uma propriedade, sugerindo uma participação considerável de proprietários individuais no Airbnb.
+- In terms of distribution by neighborhoods, 12.54% of properties are located in Downtown/Civic Center, followed by Western Addition with 8.57%. On the other hand, the presence of properties in Golden Gate Park is minimal, representing only 0.04%.
 
-Em termos de distribuição por bairros, 12,54% dos imóveis estão localizados em Downtown/Civic Center, seguido por Western Addition com 8,57%. Por outro lado, a presença de imóveis em Golden Gate Park é mínima, representando apenas 0,04%.
+### 3. Multivariate Analysis
+Possible questions to be addressed:
 
-### 3. Análise multivariada
-
-Perguntas possíveis a serem realizadas:
-
-- Qual a relação entre o preço e o tipo de quarto?
-- A localização (bairro) influencia no número de avaliações ou no preço das diárias?
-- A quantidade de imóveis em cada bairro?
-- Como as avaliações afetam o preço das diárias?
-- Propriedades com mais avaliações por mês tendem a ter preços mais altos?
-- Existe uma relação entre a quantidade mínima de noites e a disponibilidade ao longo do ano?
-
-<p align="center">
-  <img alt="Analisando Airbnb" width="80%" src="price_typeroom.png">
-</p>
+What is the relationship between price and room type?
+Does the location (neighborhood) influence the number of reviews or the price of rentals?
+How does the quantity of properties vary across neighborhoods?
+How do reviews affect rental prices?
+Do properties with more reviews per month tend to have higher prices?
+Is there a relationship between the minimum number of nights and availability throughout the year?
 
 <p align="center">
-  Fonte: Autor
-</p>
-
-Em primeiro lugar dos tipos de imóveis mais caros está casas/apartamentos com valor médio de aluguel de \$193.3. Quartos privativos custam em média \$175.4, sendo o segundo imóvel mais caro. O mais barato dos imóveis são quartos de hotéis com valor médio de alguel de \$75.02.
-
-<p align="center">
-  <img alt="preços por bairros width="80%" src="price_neighb.png">
+  <img alt="Analisando Airbnb" width="80%" src="mean_type_of_room.png">
 </p>
 
 <p align="center">
-  Fonte: Autor
+  Font: Author
 </p>
 
-Os cinco bairros mais caros de aluguel são Finacial District (\$221.08), North Beach (\$212.38), Castro/Upper Market (\$208.36), Presidio (\$207.75), Chinatown (\$203.32).
+Firstly, among the types of properties, houses/apartments are the most expensive, with an average rental price of $193.3. Private rooms follow as the second most expensive, with an average price of $175.4. The cheapest option among the properties are hotel rooms, with an average rental price of $75.02.
 
 <p align="center">
-  <img alt="Analisando Airbnb" width="80%" src="neighb.png">
-</p>
-
-<p align="center">
-  Fonte: Autor
-</p>
-
-Se compararmos o gráfico acima sobre as reviews por bairro, temos uma situação interessante, que 2 dos bairros dos 5 mais caros, Financial Dsistrict, são os que apresentam menores médias de avaliaçãoes com 5,91 e 5,56 respectivamente.
-Os 5 bairros mais bem avaliados são Outer Mission, Crocker Amazon, Excelsior e Parkside.
-
-<p align="center">
-  <img alt="Analisando Airbnb" width="80%" src="correlation_arbnb.png">
+  <img alt="preços por bairros width="80%" src="price_for_neighb.png">
 </p>
 
 <p align="center">
-  Fonte: Autor
+  Font: Author
 </p>
 
-Conclusões sobre as correlações:
+The five most expensive neighborhoods for rent are Financial District ($221.08), North Beach ($212.38), Castro/Upper Market ($208.36), Presidio ($207.75), and Chinatown ($203.32).
 
-- A relação entre preço e outras variáveis é, em geral, fraca.
-- O número mínimo de noites tem uma relação negativa com a disponibilidade e uma relação moderada e negativa com o número de reviews a longo prazo.
-- O número de reviews está fortemente relacionado tanto com o número de reviews a longo prazo quanto com a quantidade de reviews por mês.
-- A disponibilidade ao longo do ano tem uma relação fraca com várias variáveis, incluindo preço e número de reviews a longo prazo.
+<p align="center">
+  <img alt="Analisando Airbnb" width="80%" src="reviews_for_neighb.png">
+</p>
 
-### 4. Conclusões
+<p align="center">
+  Font: Author
+</p>
 
-Este projeto teve o objetivo de realizar uma análise dos dados do Airbnb da cidade de São Francisco. De inicio foi nessário uma limpeza em agumas variáveis, como a avariável neighbourhood_group não possuia entradas.
-Foi necessário realizar uma limpeza de outliers nas variáveis `price` e `minimum_nights`. É interessante realizar essa limpeza pois são variáveis que podem ser consideradas importantes para uma escolha de determinado lugar.
+If we compare the graph above about the reviews by neighborhood, we have an interesting situation where 2 of the neighborhoods among the top 5 most expensive, Financial District, have the lowest average reviews with 5.91 and 5.56 respectively. The top 5 neighborhoods with the highest ratings are Outer Mission, Crocker Amazon, Excelsior, and Parkside.
 
-Após isso foi para facilitar o processo de análise realizei algumas perguntas para realizar uma análise univariada e multivariada.
+<p align="center">
+  <img alt="Analisando Airbnb" width="80%" src="corr.png">
+</p>
 
-Ao analisar os gráficos, observamos que a maioria dos aluguéis concentra-se em valores próximos a $100, com uma representação expressiva de casas/apartamentos (61,8%) e uma preferência por períodos de 0 a 5 noites. O número de avaliações predominam na faixa de 0 a 5s. A maioria dos proprietários possui apenas um imóvel, sugerindo participação significativa de indivíduos no Airbnb.
+<p align="center">
+  Font: Author
+</p>
 
-Na categorização dos imóveis por preço médio de aluguel, casas/apartamentos lideram com \$193.3, seguidos por quartos privativos (\$175.4) e quartos de hotéis (\$75.02). Os bairros mais caros incluem Financial District, North Beach, Castro/Upper Market, Presidio e Chinatown, enquanto Outer Mission, Crocker Amazon, Excelsior e Parkside são os mais bem avaliados.
+Conclusions about the correlations:
 
-As análises de correlação revelam que a relação entre preço e outras variáveis é geralmente fraca. O número mínimo de noites mostra uma relação negativa com disponibilidade e uma moderada relação negativa com o número de reviews a longo prazo. O número de reviews está fortemente relacionado tanto com os reviews a longo prazo quanto com a quantidade de reviews por mês. A disponibilidade ao longo do ano apresenta relações fracas com várias variáveis, incluindo preço e número de reviews a longo prazo.
+- The relationship between price and other variables is generally weak.
+- The minimum number of nights has a negative relationship with availability and a moderate, negative relationship with the number of long-term reviews.
+- The number of reviews is strongly related to both the number of long-term reviews and the quantity of reviews per month.
+- Availability throughout the year has a weak relationship with several variables, including price and the number of long-term reviews.
+
+### 4. Conclusions
+
+This project aimed to conduct an analysis of Airbnb data for the city of San Francisco. Initially, it was necessary to clean some variables, as the `neighbourhood_group` variable had no entries. Outlier cleaning was also required for the `price` and `minimum_nights` variables. This cleaning process is important as these variables are considered crucial factors in the decision-making process for choosing a particular location.
+
+Afterward, to facilitate the analysis process, I formulated some questions to conduct both univariate and multivariate analyses.
+
+Upon analyzing the graphs, we observed that the majority of rentals are concentrated around $100, with a significant representation of houses/apartments (61.8%) and a preference for rental periods of 0 to 5 nights. The number of reviews predominates in the 0 to 5 range. Most property owners have only one property, suggesting significant individual participation in Airbnb.
+
+Regarding the categorization of properties by average rental price, houses/apartments lead with \$193.3, followed by private rooms (\$175.4) and hotel rooms (\$75.02). The most expensive neighborhoods include the Financial District, North Beach, Castro/Upper Market, Presidio, and Chinatown, while Outer Mission, Crocker Amazon, Excelsior, and Parkside are the highest-rated ones.
+
+Correlation analyses revealed that the relationship between price and other variables is generally weak. The minimum number of nights shows a negative relationship with availability and a moderate negative relationship with the number of long-term reviews. The number of reviews is strongly correlated with both long-term reviews and the quantity of reviews per month. Availability throughout the year has weak relationships with several variables, including price and the number of long-term reviews.
 
 
-## Referências inspiradas 
+## References Inspired
 
 “12 bairros para conhecer em São Francisco,” Qual Viagem. Accessed: Feb. 01, 2024. [Online]. Available: https://www.qualviagem.com.br/12-bairros-para-conhecer-em-sao-francisco/
 
