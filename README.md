@@ -2,7 +2,7 @@
 
 With the goal of studying information extraction from company data, this project presents an analysis of Airbnb data for the San Francisco, California region
 
-### Informations about the data and data cleaning
+## Informations about the data and data cleaning
 
 [Inside Airbnb](http://insideairbnb.com/get-the-data/) is a platform dedicated to providing detailed information about lodging listings, allowing for in-depth analysis of rental market patterns and trends. The datasets available cover a variety of relevant information, including residence locations, property features, prices, availability, among others.
 
@@ -37,7 +37,7 @@ The `neighbourhood_group` column is completely absent, and the `license` column 
 | number_of_reviews_ltm         | Number of reviews in the last 12 months                                                       |
 | license                       | Property registration number                                                                 |
 
-### 1.1 Statistical description of variables
+## Statistical description of variables
 
 The variable `price`, which represents the price in dollars per night of the rental, shows an average of about \$228.00, with 75% of the values below \$232.00. However, the maximum price of \$25,000.00 and the considerable standard deviation of \$671.91 draw attention. This distribution suggests the presence of outliers that can impact the interpretation of the results.
 
